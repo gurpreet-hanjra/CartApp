@@ -1,0 +1,13 @@
+doctype html
+html(lang="de", ng-app="cartApp")
+    head
+        title= "Mini cart"
+        script(src='scripts/app.min.js')
+        link(href='styles/app.css', rel='stylesheet')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //-meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    body
+     include ./header/header.jade
+     include ./alerts/alert.jade
+     div.container
+      div(class="ng-view")

@@ -1,0 +1,38 @@
+div(ng-Controller="HeaderController as vm")
+ nav.navbar.navbar-default.navbar-fixed-top
+  div(class="container")
+    div.navbar-header
+     a(class="navbar-brand", href="#") Shopper
+    div.navbar-collapse
+     ul.nav.navbar-nav.navbar-right
+      li.drop-down-container
+         span(uib-dropdown='', on-toggle='toggled(open)', auto-close="outsideClick")
+          a#simple-dropdown(href='', uib-dropdown-toggle='') 
+           span.badge {{vm.grandCount()}}
+           span.btn-title My Cart
+          ul.dropdown-menu(uib-dropdown-menu='', aria-labelledby='simple-dropdown')
+           li
+            ul(class="product-container")
+             li(class="product", ng-repeat="product in vm.products track by $index")
+              div.img
+               img(ng-src="{{vm.imgPath}}{{product.productImageName}}")
+              div.details
+               div.title {{product.productName}}
+               div.number {{product.productNumber}}
+               div.price {{product.price| currency}}
+               div.quantity
+                form 
+                 input(type="number", min="1", max="99", ng-init="product.count=1", ng-model="product.count", 
+                 name="{{$index + 'inp'}}", 
+                 ng-change="vm.change(product)")
+                span.imme-total {{vm.getTotal(product.count, product.price)| currency}} 
+               button(type="button", class="close", data-dismiss="modal", ng-click="vm.remove($event, $index)") &times;
+            ul.total-container   
+             li.total
+              div You have {{vm.grandCount()}} items in your cart
+              div.subtotal
+               div.currency Subtotal (USD)
+               div.amount {{vm.grandTotal() | currency}}
+              div(class="btn-holder") 
+               button(class="btn btn-secondary") View Cart
+               button(class="btn btn-primary") Checkout

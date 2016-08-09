@@ -1,0 +1,43 @@
+.tab-content {
+    border: 1px solid #ddd;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.infinite-holder {
+    height: 320px;
+    overflow-y: scroll;
+}
+
+.tab-content-inner {
+    padding: 10px 10px 10px;
+    border: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    border-top-width: 0;
+    
+}
+
+.nav-tabs > li > a {
+    background: #E9E9E9;
+    border-bottom: 1px;
+}
+
+.nav-tabs {
+    .home-link-li {
+        float: right;
+        //margin-right: 100px;
+        //margin-top: 8px;
+        a, a:hover {
+            background: none;
+        }
+    }
+    .export-link-li {
+        float: right;
+        //margin-right: 10px;
+        a, a:hover {
+            background: none;
+        }
+    }    
+}
+

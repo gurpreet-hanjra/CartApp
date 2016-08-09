@@ -1,0 +1,11 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+
+.modal-footer {
+	.btn:first-child {
+	  //float: left;
+	}
+
+	.btn + .btn {
+     margin-left: 10px; 
+    }
+}

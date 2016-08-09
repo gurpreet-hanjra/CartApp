@@ -1,0 +1,56 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+
+@import 'components/_product';
+@import 'components/_badge';
+@import 'components/_dropdowns';
+
+// Styled default components
+@import 'components/_alerts';
+@import 'components/_buttons';
+@import 'components/_navbar';
+@import 'components/_navs';
+@import 'components/_tabs';
+
+// Custom components
+@import 'components/loading';
+@import 'components/progress-bars';
+
+// font icons
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url("fonts/bootstrap/glyphicons-halflings-regular.eot");
+    src: url("fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+            url("fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"),url("fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"),url("fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"),url("fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.glyphicon-pencil:before {
+    content: "\270f"
+}

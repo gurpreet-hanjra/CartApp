@@ -1,0 +1,19 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+
+.navbar-default {
+
+	background-color: #1F3675;
+	border-radius: 0;
+	border: 0;
+	.navbar-brand {
+		color: #FFFFFF;
+	}
+
+	.navbar-brand:hover {
+		background: #E5E5E5;
+	}
+}
+
+.navbar-fixed-top {
+	height: 50px;
+}

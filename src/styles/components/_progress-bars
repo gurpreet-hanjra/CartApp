@@ -1,0 +1,23 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars';
+
+.progress-holder {
+    height: 349px;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    width: 94%;
+    top: 16px;
+    left: 17px;
+
+    .progress {
+	    width: 40%;
+	    margin: 0 auto;
+	    margin-top: 150px;
+	}
+
+	.progress-label {
+	    margin-top: 125px;
+	    position: absolute;
+	    width: 100%;
+	    text-align: center;
+	}
+}

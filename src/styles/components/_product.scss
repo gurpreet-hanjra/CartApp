@@ -1,0 +1,149 @@
+.product-container {
+	width: 440px;
+	list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 385px;
+    overflow: scroll;
+    
+    input[type="number"] {
+    	padding: 2px 0 2px 5px;
+    }
+
+    .product {
+    	width: 440px;
+    	float: left;
+    	padding: 20px 20px 0 20px;
+    }
+
+    li:last-child .img,
+	li:last-child .details {
+	    border: 0;
+	}
+
+	.img {
+		width: 150px;
+		min-height: 173px;
+		
+		img {
+			max-width: 150px;
+		}
+	}
+
+	form {
+		float: left;
+	}
+
+	.details {
+		width: 250px;
+		padding: 0 20px;
+		position: relative;
+		min-height: 173px;
+
+		.title {
+			font-weight: bold;
+			height: 42px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    line-height: 1.6;
+		}
+
+		.number {
+			margin: 12px 0;
+		}
+
+		.price {
+			margin: 2px 0 10px;
+		}
+
+		.close {
+			position: absolute;
+			top: -2px;
+    		right: 0;
+		}
+
+		.quantity {
+			margin: 5px 0 0;
+		    float: left;
+		    width: 100%;
+
+			.imme-total {
+				float: right;
+				padding-top: 4px;
+			}
+		}
+	}
+
+	.img,
+	.details {
+		float: left;
+		border-bottom: 1px solid #CCC;
+		padding-bottom: 20px;
+	}
+
+	
+}
+
+.total-container {
+    float: left;
+    background: antiquewhite;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+
+    .total {
+		background: #F5F5F5;
+	    float: left;
+	    width: 100%;
+	    padding: 20px;
+
+	    .total-label {
+	    	font-size: 12px;
+	    }
+
+	    .currency,
+	    .amount {
+	    	font-size: 18px;
+	    }
+
+	    .currency {
+	    	float: left;
+	    }
+
+	    .amount {
+	    	float: right;
+	    }
+
+	    .btn-holder {
+	    	float: left;
+    		width: 100%;
+    		margin: 20px 0 0;
+
+    		.btn {
+    			border-radius: 3px;
+    			margin-right: 6%;
+    			width: 47%;
+    		}
+
+    		.btn + .btn {
+    			margin-right: 0;
+    			float: right;
+    		}
+	    }
+	}
+}
+
+@media (max-width: 767px) {
+	.product-container {
+		width: 100%;
+
+		.product {
+			width: 100%;
+		}
+
+		.details {
+		    width: calc(100% - 150px);
+		}
+	}
+}
