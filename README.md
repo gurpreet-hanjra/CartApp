@@ -6,7 +6,7 @@
 
 2) `gulp`
 
-If problem with gulp, try running npm install gulp -g
+If problem with running gulp, try running `npm install gulp -g`
 
 App will open in new browser window.
 
@@ -26,4 +26,4 @@ For any comments/feedback/questions, contact gurpreet.singh@gmail.com
 
 1) `gulp test`
 
-If problem with running tests, try running npm install karma-cli -g
+If problem with running tests, try running `npm install karma-cli -g`
